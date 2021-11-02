@@ -1,0 +1,36 @@
+{
+  "name": "viz",
+  "version": "1.0.0",
+  "description": "Advanced Discord bot. Made by Viz#0021",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js",
+    "start": "node .",
+    "node-update": "npm i --save-dev node@16 && npm config set prefix=$(pwd)/node_modules/node && export PATH=$(pwd)/node_modules/node/bin:$PATH",
+    "node-clean": "rm -rf node_modules && rm package-lock.json && npm cache clear --force && npm cache clean --force && npm i",
+    "node-update-then-clean": "npm run node-update && npm run node-clean"
+  },
+  "dependencies": {
+    "@mikemcbride/dad-jokes": "^1.0.0",
+    "amethyste-api": "^1.1.5",
+    "ascii-table": "^0.0.9",
+    "axios": "^0.24.0",
+    "chalk": "^4.1.2",
+    "dgram": "^1.0.1",
+    "discord-buttons": "^4.0.0",
+    "discord-player": "^5.1.0",
+    "discord-tts": "^1.2.1",
+    "discord.js": "^13.3.1",
+    "express": "^4.17.1",
+    "moment": "^2.29.1",
+    "moment-duration-format": "^2.3.2",
+    "officegen": "^0.6.5",
+    "opusscript": "0.0.8",
+    "snekfetch": "^4.0.4",
+    "ytdl-core": "^4.9.1"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "node": "^16.13.0"
+  }
+}
